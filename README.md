@@ -1,1 +1,1 @@
-# final
+$ git branch -d <OLT>
