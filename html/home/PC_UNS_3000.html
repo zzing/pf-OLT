@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?
+$title = "통합검색 | 온라인투어";
+include $_SERVER["DOCUMENT_ROOT"] . ("/web/html/inc/layout/inc_HEAD.html");
+?>
+
+<body>
+	<div class="wrap">
+		<!-- ############################## -->
+		<!-- [LAYOUT] HEADER -->
+		<!-- ############################## -->
+		<? includeFile('/web/html/inc/layout/inc_HEADER.html'); ?>
+		<!-- ############################## -->
+		<!-- // -->
+		<!-- ############################## -->
+
+		<!-- ############################## -->
+		<!-- ### [LAYOUT] CONTENT ### -->
+		<!-- ############################## -->
+		<div class="content home">
+			<!-- ############################## -->
+			<!-- [CONTENT] 검색결과목록-->
+			<!-- ############################## -->
+			<article class="container">
+				<!-- ------------------------------------------- -->
+				<!-- ### [HEADER] 검색수/시티정보 ### -->
+				<!-- ------------------------------------------- -->
+				<header class="tit_type">
+					<!-- [M 2019-12-09] 문구수정 -->
+					<h1><strong>다낭</strong>에 대한 <strong>1,654</strong>건의 검색결과가 있습니다.</h1>
+					<!-- ------------------------------------------- -->
+					<!-- # 시티정보 # -->
+					<!-- [D] 사용자가 입력한 검색어가 시티일 경우에만 출력되는 정보 -->
+					<!-- ------------------------------------------- -->
+					<!-- [CASE1] 해외 -->
+					<section class="data_info4">
+						<h2>시티정보</h2>
+						<dl>
+							<!-- [D] 국기 이미지가 없는 경우 <i>~</i> 전체 미노출 -->
+							<dt><i><img src="../../img/upload/@national_thum1.jpg" width="28" height="20" alt="" /></i><strong>다낭</strong></dt>
+							<dd>
+								<span>날씨 <i data-weather="01">맑음</i></span>
+								<strong>24.5~32.5 ˚C(습도 24%)</strong>
+							</dd>
+							<dd class="ico1">
+								<span>시차</span>
+								<strong>2시간 느림</strong>
+							</dd>
+							<dd class="ico2">
+								<span>환율</span>
+								<strong>1 VND = 4.88원</strong>
+							</dd>
+						</dl>
+					</section>
+					<!-- [CASE2] 국내 -->
+					<section class="data_info4">
+						<h2>시티정보</h2>
+						<dl>
+							<dt><i><img src="../../img/upload/@national_thum2.jpg" width="28" height="20" alt="" /></i><strong>제주</strong></dt>
+							<dd>
+								<span>날씨</span>
+								<strong><i data-weather="01">맑음</i>24.5~32.5 ˚C(습도 24%)</strong>
+							</dd>
+						</dl>
+					</section>
+				</header>
+
+				<!-- ------------------------------------------- -->
+				<!-- ### [TAB] 카테고리탭 영역 ### -->
+				<!-- [D] 검색결과가 없을 경우 해당 카테고리명 옆에 (0)으로 출력 -->
+				<!-- ------------------------------------------- -->
+				<!-- [M 2020-04-02] sticky_wrap 으로 감싸기 -->
+				<div class="sticky_wrap" data-sticky>
+					<ul class="tab_type" data-tabbtn="utabinfo">
+						<li class="on"><a href="#none"><span>통합<i>(1,654)</i></span></a></li>
+						<li><a href="#none"><span>실시간 항공권<i>(56)</i></span></a></li>
+						<li><a href="#none"><span>호텔/숙박<i>(45)</i></span></a></li>
+						<li><a href="#none"><span>여행<i>(55)</i></span></a></li>
+						<li><a href="#none"><span>투어&amp;티켓<i>(45)</i></span></a></li>
+						<li><a href="#none"><span>이벤트&middot;기획전<i>(45)</i></span></a></li>
+						<!-- [M 2019-12-09] 삭제 
+						<li><a href="#none"><span>상품평<i>(130)</i></span></a></li>
+						<li><a href="#none"><span>자주하는 질문<i>(65)</i></span></a></li>
+						-->
+					</ul>
+				</div>
+				<!-- // -->
+
+				<!-- ------------------------------------------- -->
+				<!-- ### [TAB] 목록 ### -->
+				<!-- ------------------------------------------- -->
+				<div data-tab="utabinfo">
+					<!-- ------------------------------------------- -->
+					<!-- [SECTION] 실시간 항공권 -->
+					<!-- ------------------------------------------- -->
+					<section class="panel">
+						<h2 class="tit_type5">실시간 항공권 <b>(56)</b></h2>
+						<!-- [D] 리스트 4개 노출 -->
+						<ul class="data_summary5 t1" data-product="flight">
+							<li>
+								<!-- [항공사] -->
+								<span class="area1"><em data-air-logo="항공사코드">항공사명</em></span>
+
+								<!-- [상품정보] -->
+								<div class="area2">
+									<div class="txt_data3" title="왕복">
+										<i class="icon_txt1">왕복</i>
+										<strong title="출발지">출발지<i>(CODE)</i></strong>
+										<em title="도착지">도착지<i>(CODE)</i></em>
+									</div>
+									<dl class="txt_info">
+										<dt class="hide">경유</dt>
+										<dd><b>경유</b></dd>
+										<dt>출발일</dt>
+										<dd><time datetime="MM-DD">MM-DD</time></dd>
+										<dt>귀국일</dt>
+										<dd><time datetime="MM-DD">MM-DD</time></dd>
+									</dl>
+								</div>
+
+								<!-- [기타] -->
+								<div class="area4">
+									<dl class="txt_data">
+										<dt>총 요금</dt>
+										<dd>
+											<strong>760,000</strong>
+											<span>원~</span>
+										</dd>
+									</dl>
+									<a href="#none" class="btn_type btn_blue">조회하기</a>
+								</div>
+							</li>
+							<li>
+								<span class="area1"><em data-air-logo="KE">대한항공</em></span>
+								<div class="area2">
+									<div class="txt_data3" title="왕복">
+										<i class="icon_txt1">왕복</i>
+										<strong title="출발지">로스앤젤레스<i>(LAX)</i></strong>
+										<em title="도착지">부에노스아이레스<i>(EZE)</i></em>
+									</div>
+									<dl class="txt_info">
+										<dt class="hide">경유</dt>
+										<dd><b>직항</b></dd>
+										<dt>출발일</dt>
+										<dd><time datetime="08-01">08-01</time></dd>
+										<dt>귀국일</dt>
+										<dd><time datetime="08-12">08-12</time></dd>
+									</dl>
+								</div>
+								<div class="area4">
+									<dl class="txt_data">
+										<dt>총 요금</dt>
+										<dd>
+											<strong>1,760,000</strong>
+											<span>원~</span>
+										</dd>
+									</dl>
+									<a href="#none" class="btn_type btn_blue">조회하기</a>
+								</div>
+							</li>
+							<li>
+								<span class="area1"><em data-air-logo="ZE">이스타항공</em></span>
+								<div class="area2">
+									<div class="txt_data3" title="편도">
+										<i class="icon_txt1">편도</i>
+										<strong title="출발지">인천<i>(INC))</i></strong>
+										<em title="도착지">파리<i>(PAR)</i></em>
+									</div>
+									<dl class="txt_info">
+										<dt class="hide">경유</dt>
+										<dd><b>직항</b></dd>
+										<dt>출발일</dt>
+										<dd><time datetime="08-01">08-01</time></dd>
+										<dt>귀국일</dt>
+										<dd><time datetime="08-12">08-12</time></dd>
+									</dl>
+								</div>
+								<div class="area4">
+									<dl class="txt_data">
+										<dt>총 요금</dt>
+										<dd>
+											<strong>1,760,000</strong>
+											<span>원~</span>
+										</dd>
+									</dl>
+									<a href="#none" class="btn_type btn_blue">조회하기</a>
+								</div>
+							</li>
+							<li>
+								<span class="area1"><em data-air-logo="OZ">아시아나항공</em></span>
+								<div class="area2">
+									<div class="txt_data3" title="편도">
+										<i class="icon_txt1">편도</i>
+										<strong title="출발지">우스티카메노고르스크<i>(UKK)</i></strong>
+										<em title="도착지">홍콩<i>(HKG)</i></em>
+									</div>
+									<dl class="txt_info">
+										<dt class="hide">경유</dt>
+										<dd><b>경유</b></dd>
+										<dt>출발일</dt>
+										<dd><time datetime="08-01">08-01</time></dd>
+										<dt>귀국일</dt>
+										<dd><time datetime="08-12">08-12</time></dd>
+									</dl>
+								</div>
+								<div class="area4">
+									<dl class="txt_data">
+										<dt>총 요금</dt>
+										<dd>
+											<strong>1,760,000</strong>
+											<span>원~</span>
+										</dd>
+									</dl>
+									<a href="#none" class="btn_type btn_blue">조회하기</a>
+								</div>
+							</li>
+						</ul>
+						<p class="txt_type1 t1">성인1인/왕복 기준, 좌석 잔여 여부에 따라 해당 요금의 예약이 불가할 수 있습니다.</p>
+
+						<!-- nodata 
+						<p class="mes_data_none img1">
+							<strong>해당 키워드로 검색되는 상품이 없습니다.</strong>
+							검색어가 바르게 입력되었는지 확인해 주시고 다른 검색어를 입력해 주십시오.
+						</p>
+						-->
+						<!-- 더보기 -->
+						<a href="#none" class="btn_small2 sub btn_white arr1">더보기</a>
+					</section>
+
+					<!-- ------------------------------------------- -->
+					<!-- [SECTION] 호텔/숙박 -->
+					<!-- ------------------------------------------- -->
+					<section class="panel">
+						<h2 class="tit_type5">호텔/숙박 <b>(45)</b></h2>
+						<!-- [D] 리스트 3개 노출 -->
+						<? includeFile('/web/html/inc/product/inc_PRO_TYPE01.html', array('name' => '1', 'cate' => '통합검색')) ?>
+						<!-- nodata 
+						<p class="mes_data_none img2">
+							<strong>해당 키워드로 검색되는 상품이 없습니다.</strong>
+							검색어가 바르게 입력되었는지 확인해 주시고 다른 검색어를 입력해 주십시오.
+						</p>
+						-->
+						<!-- 더보기 -->
+						<a href="#none" class="btn_small2 sub btn_white arr1">더보기</a>
+					</section>
+
+					<!-- ------------------------------------------- -->
+					<!-- [SECTION] 여행 -->
+					<!-- ------------------------------------------- -->
+					<section class="panel">
+						<h2 class="tit_type5">여행 <b>(55)</b></h2>
+						<!-- [D] 리스트 3개 노출 -->
+						<? includeFile('/web/html/inc/product/inc_PRO_TYPE01.html', array('name' => '2', 'cate' => '통합검색')) ?>
+						<!-- nodata 
+						<p class="mes_data_none img5">
+							<strong>해당 키워드로 검색되는 상품이 없습니다.</strong>
+							검색어가 바르게 입력되었는지 확인해 주시고 다른 검색어를 입력해 주십시오.
+						</p>
+						-->
+						<!-- 더보기 -->
+						<a href="#none" class="btn_small2 sub btn_white arr1">더보기</a>
+					</section>
+
+					<!-- ------------------------------------------- -->
+					<!-- [SECTION] 투어티켓 -->
+					<!-- ------------------------------------------- -->
+					<section class="panel">
+						<h2 class="tit_type5">투어&amp;티켓 <b>(45)</b></h2>
+						<!-- [D] 리스트 3개 노출 -->
+						<? includeFile('/web/html/inc/product/inc_PRO_CARD03.html', array('name' => '2', 'cate' => '투어티켓', 'num' => 3)) ?>
+						<!-- nodata 
+						<p class="mes_data_none img4">
+							<strong>해당 키워드로 검색되는 상품이 없습니다.</strong>
+							검색어가 바르게 입력되었는지 확인해 주시고 다른 검색어를 입력해 주십시오.
+						</p>
+						-->
+						<!-- 더보기 -->
+						<a href="#none" class="btn_small2 sub btn_white arr1">더보기</a>
+					</section>
+
+					<!-- ------------------------------------------- -->
+					<!-- [SECTION] 이벤트/기획전 -->
+					<!-- ------------------------------------------- -->
+					<section class="panel">
+						<h2 class="tit_type5">이벤트&middot;기획전 <b>(45)</b></h2>
+						<!-- [D] 리스트 3개 노출 -->
+						<? includeFile('/web/html/inc/product/inc_LIS_CARD01.html', array('name' => '1', 'cate' => '통합검색')) ?>
+						<!-- nodata 
+						<p class="mes_data_none img15">
+							<strong>해당 키워드로 검색되는 상품이 없습니다.</strong>
+							검색어가 바르게 입력되었는지 확인해 주시고 다른 검색어를 입력해 주십시오.
+						</p>
+						-->
+						<!-- 더보기 -->
+						<a href="#none" class="btn_small2 sub btn_white arr1">더보기</a>
+					</section>
+
+					<!-- ------------------------------------------- -->
+					<!-- [SECTION] 상품평 -->
+					<!-- [M 2019-12-09] 삭제
+					<section class="panel">
+						<h2 class="tit_type5">상품평 <b>(130)</b></h2>
+						// [D] 리스트 4개 노출 
+						<ul class="list_card2">
+							<li>
+								// [이미지] 
+								// [D] 이미지 없을 경우 이미지 태그 삭제 : <span class="area1"></span> 
+								<span class="area1"><img src="https://image1.onlinetour.co.kr/obms_images/tour_info/HK/2017031510202279DC518987B04386963D51893640D5EF.jpg" alt="" /></span>
+
+								// [정보] 
+								<div class="area2">
+									<i>국내여행</i>
+									<cite>[진에어]자연유산투어 2월 선착순특가</cite>
+									<span>친구와 함께 다낭 여행을 계획하고 온라인투어에서 항공권을 저렴하게 구매했다. 한달전에 미리 항공권을 예약하면 원하는 날짜에 맞춰 저렴하게 구매할수 있다. 여행 갈때마다 항상 이용한다.</span>
+								</div>
+
+								// [작성자] 
+								<dl class="area3">
+									<dt>작성자</dt>
+									<dd>박*검 고객님</dd>
+								</dl>
+
+								// [상세보기] 
+								<a href="#none">상세보기</a>
+							</li>
+							<li>
+								<span class="area1"><img src="https://image1.onlinetour.co.kr/area_img/US/NYC/USNYC3207668_0003.jpg" alt="" /></span>
+								<div class="area2">
+									<i>해외자유여행</i>
+									<cite>[나혼자뉴욕간다]싱글차지 없이 떠나는 뉴욕 자유여행 7일</cite>
+									<span>2017년 여름 휴가는 세계 4대 박물관 중의 하나인 the met가 있는 뉴욕을 갔었습니다. 알아본 여행사 중에서 온라인 투어가 제일 저렴하였고 안내 해주시는 직원분도 친절 했습니다. </span>
+								</div>
+								<dl class="area3">
+									<dt>작성자</dt>
+									<dd>박*검 고객님</dd>
+								</dl>
+								<a href="#none">상세보기</a>
+							</li>
+							<li>
+								<span class="area1"><img src="https://image1.onlinetour.co.kr/area_img/AU/SYD/AUSYD3204058_0007A.jpg" alt="" /></span>
+								<div class="area2">
+									<cite>[한인가이드]블루마운틴 하이킹 투어</cite>
+									<span>이번에 혼자서 호주로 여행ㅇ을 갔는데 유일하게 가이드가 있는 여정이였어요~~</span>
+								</div>
+								<dl class="area3">
+									<dt>작성자</dt>
+									<dd>박*검 고객님</dd>
+								</dl>
+								<a href="#none">상세보기</a>
+							</li>
+							<li>
+								<span class="area1"><img src="https://image1.onlinetour.co.kr/area_img/AU/SYD/AUSYD3204058_0007A.jpg" alt="" /></span>
+								<div class="area2">
+									<cite>[한인가이드]블루마운틴 하이킹 투어</cite>
+									<span>이번에 혼자서 호주로 여행ㅇ을 갔는데 유일하게 가이드가 있는 여정이였어요~~</span>
+								</div>
+								<dl class="area3">
+									<dt>작성자</dt>
+									<dd>박*검 고객님</dd>
+								</dl>
+								<a href="#none">상세보기</a>
+							</li>
+						</ul>
+						// nodata 
+						<p class="mes_data_none img12">
+							<strong>해당 키워드로 검색되는 상품이 없습니다.</strong>
+							검색어가 바르게 입력되었는지 확인해 주시고 다른 검색어를 입력해 주십시오.
+						</p>
+						// 더보기 
+						<a href="#none" class="btn_small2 sub btn_white arr1">더보기</a>
+					</section>
+					-->
+					<!-- ------------------------------------------- -->
+
+					<!-- ------------------------------------------- -->
+					<!-- [SECTION] 자주하는 질문 -->
+					<!-- [M 2019-12-09] 삭제 
+					<section class="panel">
+						<h2 class="tit_type5">자주하는 질문 <b>(65)</b></h2>
+						// [D] 리스트 5개 노출 
+						<? // includeFile('/web/html/inc/product/inc_LIS_TYPE01.html', array('name' => "2", 'type' => '검색')) ?>
+						// nodata 
+						<p class="mes_data_none img21">
+							<strong>해당 키워드로 검색되는 상품이 없습니다.</strong>
+							검색어가 바르게 입력되었는지 확인해 주시고 다른 검색어를 입력해 주십시오.
+						</p>
+						// 더보기 
+						<a href="#none" class="btn_small2 sub btn_white arr1">더보기</a>
+					</section>
+					-->
+				</div>
+			</article>
+		</div>
+		<!-- ############################## -->
+		<!-- // -->
+		<!-- ############################## -->
+
+		<!-- ############################## -->
+		<!-- [LAYOUT] FOOTER -->
+		<!-- ############################## -->
+		<? includeFile('/web/html/inc/layout/inc_FOOTER.html'); ?>
+		<!-- ############################## -->
+		<!-- // -->
+		<!-- ############################## -->
+	</div>
+
+	<!-- ############################## -->
+	<!-- [LAYOUT] QUICK -->
+	<!-- ############################## -->
+	<? includeFile('/web/html/inc/layout/inc_QUICK.html'); ?>
+	<!-- ############################## -->
+	<!-- // -->
+	<!-- ############################## -->
+</body>
+
+</html>

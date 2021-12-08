@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?
+$title = "통합검색 | 온라인투어";
+include $_SERVER["DOCUMENT_ROOT"] . ("/web/html/inc/layout/inc_HEAD.html");
+?>
+
+<body>
+	<div class="wrap">
+		<!-- ############################## -->
+		<!-- [LAYOUT] HEADER -->
+		<!-- ############################## -->
+		<? includeFile('/web/html/inc/layout/inc_HEADER.html'); ?>
+		<!-- ############################## -->
+		<!-- // -->
+		<!-- ############################## -->
+
+		<!-- ############################## -->
+		<!-- [LAYOUT] CONTENT -->
+		<!-- ############################## -->
+		<div class="content home">
+			<!-- ------------------------------------------- -->
+			<!-- ### [CONTENT] 검색결과목록 ###-->
+			<!-- ------------------------------------------- -->
+			<article class="container">
+				<!-- ------------------------------------------- -->
+				<!-- ## [헤딩] 검색수/시티정보 ## -->
+				<!-- ------------------------------------------- -->
+				<header class="tit_type">
+					<!-- [M 2019-12-09] 문구수정 -->
+					<h1><strong>다낭</strong>에 대한 <strong>1,654</strong>건의 검색결과가 있습니다.</h1>
+					<!-- ------------------------------------------- -->
+					<!-- # 시티정보 # -->
+					<!-- [D] 사용자가 입력한 검색어가 시티일 경우에만 출력되는 정보 -->
+					<!-- ------------------------------------------- -->
+					<section class="data_info4">
+						<h2>시티정보</h2>
+						<dl>
+							<!-- [D] 국기 이미지가 없는 경우 <i>~</i> 전체 미노출 -->
+							<dt><i><img src="../../img/upload/@national_thum1.jpg" width="28" height="20" alt="" /></i><strong>다낭</strong></dt>
+							<dd>
+								<span>날씨 <i data-weather="01">맑음</i></span>
+								<strong>24.5~32.5 ˚C(습도 24%)</strong>
+							</dd>
+							<dd class="ico1">
+								<span>시차</span>
+								<strong>2시간 느림</strong>
+							</dd>
+							<dd class="ico2">
+								<span>환율</span>
+								<strong>1 VND = 4.88원</strong>
+							</dd>
+						</dl>
+					</section>
+				</header>
+
+				<!-- ------------------------------------------- -->
+				<!-- ## [TAB] 카테고리탭 영역 ## -->
+				<!-- [D] 검색결과가 없을 경우 해당 카테고리명 옆에 (0)으로 출력 -->
+				<!-- ------------------------------------------- -->
+				<!-- [M 2020-04-02] sticky_wrap 으로 감싸기 -->
+				<div class="sticky_wrap" data-sticky>
+					<ul class="tab_type" data-tabbtn="utabinfo">
+						<li><a href="#none"><span>통합<i>(1,654)</i></span></a></li>
+						<li><a href="#none"><span>실시간 항공권<i>(56)</i></span></a></li>
+						<li><a href="#none"><span>호텔/숙박<i>(45)</i></span></a></li>
+						<li><a href="#none"><span>여행<i>(55)</i></span></a></li>
+						<li class="on"><a href="#none"><span>투어&amp;티켓<i>(45)</i></span></a></li>
+						<li><a href="#none"><span>이벤트&middot;기획전<i>(45)</i></span></a></li>
+						<!-- [M 2019-12-09] 삭제 
+						<li><a href="#none"><span>상품평<i>(130)</i></span></a></li>
+						<li><a href="#none"><span>자주하는 질문<i>(65)</i></span></a></li>
+						-->
+					</ul>
+				</div>
+				<!-- // -->
+
+				<!-- ------------------------------------------- -->
+				<!-- ## [TAB] 목록 ## -->
+				<!-- ------------------------------------------- -->
+				<div data-tab="utabinfo">
+					<!-- ------------------------------------------- -->
+					<!-- # 투어티켓 # -->
+					<!-- ------------------------------------------- -->
+					<!-- [M 2019-12-09] section 태그 추가 -->
+					<section class="panel">
+						<h2 class="tit_type5">투어&amp;티켓 <b>(45)</b></h2>
+						<!-- [D] 리스트 1페이지 30개 노출 -->
+						<? includeFile('/web/html/inc/product/inc_PRO_CARD03.html', array('name' => '2', 'cate' => '투어티켓', 'num' => 6)) ?>
+						<!-- 페이징 -->
+						<div class="paging">
+							<a href="#none" class="btn_img2 arr4">처음으로</a> <!-- [D] 이전 없을 경우 : class="btn_img2 arr4 disabled" -->
+							<a href="#none" class="btn_img2 arr2">이전</a> <!-- [D] 이전 없을 경우 : class="btn_img2 arr2 disabled" -->
+							<strong>10</strong>
+							<a href="#none">12</a>
+							<a href="#none">13</a>
+							<a href="#none">14</a>
+							<a href="#none">15</a>
+							<a href="#none">16</a>
+							<a href="#none">17</a>
+							<a href="#none">18</a>
+							<a href="#none">19</a>
+							<a href="#none">20</a>
+							<a href="#none" class="btn_img2 arr1">다음</a> <!-- [D] 다음 없을 경우 : class="btn_img2 arr1 disabled" -->
+							<a href="#none" class="btn_img2 arr3">맨마지막으로</a> <!-- [D] 다음 없을 경우 : class="btn_img2 arr3 disabled" -->
+						</div>
+						<!-- nodata 
+						<p class="mes_data_none img4">
+							<strong>해당 키워드로 검색되는 상품이 없습니다.</strong>
+							검색어가 바르게 입력되었는지 확인해 주시고 다른 검색어를 입력해 주십시오.
+						</p>
+						-->
+					</section>
+				</div>
+			</article>
+		</div>
+		<!-- ############################## -->
+		<!-- // -->
+		<!-- ############################## -->
+
+		<!-- ############################## -->
+		<!-- [LAYOUT] FOOTER -->
+		<!-- ############################## -->
+		<? includeFile('/web/html/inc/layout/inc_FOOTER.html'); ?>
+		<!-- ############################## -->
+		<!-- // -->
+		<!-- ############################## -->
+	</div>
+
+	<!-- ############################## -->
+	<!-- [LAYOUT] QUICK -->
+	<!-- ############################## -->
+	<? includeFile('/web/html/inc/layout/inc_QUICK.html'); ?>
+	<!-- ############################## -->
+	<!-- // -->
+	<!-- ############################## -->
+</body>
+
+</html>

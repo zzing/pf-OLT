@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* ##############################
+	# 온라인투어 리뉴얼 2019
+	# 기업/단체
+############################## */
+
+/*--------------------------------------------------------------------------------
+	# 기업_단체 안내
+---------------------------------------------------------------------------------*/
+.h_guide > .tit_type {height:220px; margin-top:0; padding-top:74px; padding-left:39px; margin-bottom:0; box-sizing:border-box; background:url("../img/corp/bg_corp.png") no-repeat -480px -1320px;}
+.h_guide > .tit_type > h1 {font-weight:normal; font-size:32px; letter-spacing:-0.07em; line-height:40px; color:#fff;}
+.h_guide > .tit_type > h1 strong {font-weight:700;}
+.h_guide > .tit_type > span {position:absolute; top:42px; left:39px; color:#fff;}
+.h_guide > .tit_type > button {position:absolute; width:284px; height:160px; top:30px; right:40px; font-size:0;}
+.h_guide > .txt_box {border-radius:0 0 6px 6px;}
+.txt_box {padding:25px 40px; box-sizing:border-box; background-color:#f0f5fb;}
+.txt_box > strong {padding-bottom:22px; font-weight:700; font-size:17px; letter-spacing:-0.05em; position:relative; line-height:24px; display:block;}
+.txt_box > strong:before {content:''; width:24px; height:1px; position:absolute; bottom:10px; left:0; background-color:#393992;}
+.txt_box > p {font-weight:normal; font-size:14px; letter-spacing:-0.03em; line-height:23px;}
+.txt_box > p > b {font-weight:700;}
+.txt_box:before {display:none;}
+
+.panel {margin-top:40px;}
+.h_con + .panel {margin-top:0}
+.panel > h2 {padding-bottom:10px; border-bottom:1px solid #cdd0d3;}
+.panel .box_list6 {padding-bottom:36px; margin:30px -8px 0;}
+.panel .box_list6 li {width:294px; margin-right:-4px; padding:0 8px; text-align:center; background-repeat:no-repeat; position:relative; display:inline-table;}
+.panel .box_list6 li:nth-child(n+4) {margin-top:30px;}
+
+.panel > ul.why li {background-position:center 23px;}
+.panel > ul.why li:before {content:''; width:60px; height:60px; margin-top:22px; background-image:url("../img/common/icon_set1.png"); background-position:center; display:inline-block;}
+.panel > ul.why li dd {font-size:14px; line-height:19px; color:#5b646e;}
+.panel > ul.why li:nth-child(1):before {background-position:0 -1040px;}
+.panel > ul.why li:nth-child(2):before {background-position:-80px -1040px;}
+.panel > ul.why li:nth-child(3):before {background-position:-160px -1040px;}
+.panel > ul.why li:nth-child(4):before {background-position:-240px -1040px;}
+.panel > ul.why li:nth-child(5):before {background-position:-320px -1040px;}
+.panel > ul.why li:nth-child(6):before {background-position:-400px -1040px;}
+
+.panel > ul.svc li {min-height:322px; background-position:8px 0;}
+.panel > ul.svc li a {position:absolute; bottom:0; left:8px;}
+.panel > ul.svc li dl {padding-top:157px;}
+.panel > ul.svc li dl dt {margin-top:0;}
+.panel > ul.svc li dl dd {font-size:13px;}
+.panel > ul.svc li dl dd:before {top:8px;}
+.panel > ul.svc li:before {content:'';display:block;position:absolute;top:0;left:8px;width:294px;height:157px;background:url('../img/corp/bg_corp.png') no-repeat 0 0;}
+.panel > ul.svc li:nth-child(2):before {background-position:-320px -960px}
+.panel > ul.svc li:nth-child(3):before {background-position:-640px -960px}
+.panel > ul.svc li:nth-child(4):before {background-position:-960px -960px}
+.panel > ul.svc li:nth-child(5):before {background-position:-1280px -960px}
+.panel > ul.svc li:nth-child(6):before {background-position:0 -1120px}
+
+/* 레이어 팝업 : 기업/단체 서비스 홍보영상 */
+.ly_group .layer_promote {width:822px; padding:0;}
+.ly_group .layer_promote h1 {padding-left:24px;}
+.ly_group .layer_promote .ly_con {padding-top:0;}
+.ly_group .layer_promote iframe {width:822px; height:461px; margin-bottom:-5px;}
+
+/*--------------------------------------------------------------------------------
+	# 기업출장
+---------------------------------------------------------------------------------*/
+.sticky .h_con .tit_type4 {width:914px; position:fixed; top:0; z-index:10;}
+.sticky .h_con .tit_type4 + p {padding-top:120px;}
+.h_con {margin-top:15px;}
+.h_con .feature {display:flex; -webkit-display:flex; -ms-display:flex; margin-top:30px; padding-bottom:10px;}
+.h_con .feature li {font-size:14px; line-height:18px; display:inline-block; vertical-align:middle; flex:1; -webkit-flex:1; -ms-flex:1; position:relative;}
+.h_con .feature li:before {content:''; width:72px; height:72px; background-color:#f0f5fb; border-radius:50%; display:inline-block; vertical-align:middle;}
+.h_con .feature li:after {content:''; width:40px; height:40px; background-image:url("../img/common/icon_set1.png"); position:absolute; top:50%; margin:-20px; left:36px;}
+.h_con .feature li:nth-child(1):after {background-position:-280px -800px;}
+.h_con .feature li:nth-child(2):after {background-position:-320px -800px;}
+.h_con .feature li:nth-child(3):after {background-position:-360px -800px;}
+.h_con .feature li:nth-child(4):after {background-position:-400px -800px;}
+.h_con .feature li:nth-child(5):after {background-position:-440px -800px;}
+.h_con .feature li > span {padding-left:7px; font-size:14px; line-height:18px; display:inline-block; vertical-align:middle;}
+
+.panel > h2.tit_type2 {margin-top:58px; margin-bottom:0; font-size:19px;}
+.panel .corp_stit {margin-top:14px;}
+.panel .corp_stit dt {margin-bottom:5px; font-weight:700; font-size:17px; color:#020219;}
+.panel .corp_stit dd {font-size:14px;padding-left:0;}
+.panel .corp_stit dd:before {content:none;}
+.panel .box_list2 {-webkit-display:flex; -ms-display:flex; display:flex; -webkit-flex-wrap: wrap; -ms-flex-wrap:wrap; flex-wrap:wrap;}
+.panel .box_list2 li {width:50%;}
+.visual_mes.img_graph {width:912px;padding-top:288px;background:url('../img/corp/visual_graph.png') no-repeat 0 0;}
+.visual_mes.img_mice {width:914px;padding-top:875px;background:url('../img/corp/visual_mice.png') no-repeat 0 0;}
+
+/*--------------------------------------------------------------------------------
+	# 단체항공 / 단체여행 / 맞춤여행 / 전시박람회
+---------------------------------------------------------------------------------*/
+/* 단체항공 */
+.panel1 > h2 {margin-top:30px; font-size:19px;}
+.panel1 .txt_type1 {margin-top:6px; line-height:1.4;}
+
+/* 단체여행 */
+.panel1 .box_list5 {width:636px; margin:8px -8px -13px; position:relative;}
+.panel1 .box_list5 li {width:294px; min-height:279px; padding:0 6px; text-align:center; position:relative; display:inline-block;}
+.panel1 .box_list5 li:before {content:'';display:block;width:294px;height:157px; background:url('../img/corp/bg_corp.png') no-repeat 0 0;}
+.panel1 .box_list5 li > .t_trip {min-height:109px; position:absolute; bottom:0;}
+.panel1 .box_list5 li > .t_trip > dt {font-size:16px;}
+.panel1 .box_list5 li > .t_trip > dd {padding-top:6px; padding-left:0; font-size:13px; color:#5b646e; line-height:18px;}
+.panel1 .box_list5 li > .t_trip > dd:before {content:none;}
+.panel1 .box_list5 li:last-child {min-height:570px; position:absolute; top:0; right:-290px;}
+.panel1 .box_list5 li:last-child:before {height:441px;}
+.panel1 .box_list5.group li:nth-child(1):before {background-position:0 -480px;}
+.panel1 .box_list5.group li:nth-child(2):before {background-position:-320px -480px;}
+.panel1 .box_list5.group li:nth-child(3):before {background-position:-640px -480px;}
+.panel1 .box_list5.group li:nth-child(4):before {background-position:-960px -480px;}
+.panel1 .box_list5.group li:nth-child(5):before {background-position:-1280px -480px;}
+.panel1 + .txt_box {margin-top:35px; padding-left:30px;}
+.panel1.addline > h2 {padding-bottom:10px; border-bottom: 1px solid #cdd0d3;}
+.visual_mes.img_trip {width:916px;padding-top:275px;background:url('../img/corp/visual_trip.png') no-repeat 0 0;}
+
+/* 맞춤여행 */
+.panel1 .box_list5.fit li:nth-child(1):before {background-position:0 0;}
+.panel1 .box_list5.fit li:nth-child(2):before {background-position:-320px 0;}
+.panel1 .box_list5.fit li:nth-child(3):before {background-position:-640px 0;}
+.panel1 .box_list5.fit li:nth-child(4):before {background-position:-960px 0;}
+.panel1 .box_list5.fit li:nth-child(5):before {background-position:-1280px 0;}
+
+/* 전시박람회 */
+.panel1 .txt_box.txt_box_exhibit {position:relative;padding:45px 40px; height:254px; margin-top:10px; border-radius:6px;}
+.panel1 .txt_box.txt_box_exhibit:after {content:'';display:block;position:absolute;top:0;right:0;width:457px;height:254px;background:url('../img/corp/bg_corp.png') no-repeat 0 -1320px;}
+.visual_mes.img_exhibit {width:914px;padding-top:457px;background:url('../img/corp/visual_exhibit.jpg') no-repeat 0 0;}

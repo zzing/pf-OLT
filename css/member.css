@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* ##############################
+	# 온라인투어 리뉴얼 2019
+	# 로그인/회원가입
+############################## */
+
+.tab_type:not([data-tab="uitabinfo"]) {margin-bottom:0;}
+
+/*--------------------------------------------------------------------------------
+	# 공통
+---------------------------------------------------------------------------------*/
+.content:not(.bg_white) {background-color:#f0f5fb;}
+.content.bg_white .container {min-height:439px; padding-bottom:20px !important;}
+.container {padding:0 25px 70px 25px !important;}
+header.title {padding-top:53px; font-weight:700; font-size:30px; line-height:1.36; text-align:center; letter-spacing:-0.06em;}
+header.title p {margin-top:5px; font-weight:400; font-size:15px; color:#5b646e; letter-spacing:-0.05em;}
+header.title[class*="ico"] {position:relative; padding-top:208px; font-size:28px; letter-spacing:-0.08em;}
+header.title[class*="ico"] p {margin-top:20px; font-size:16px; line-height:1.63; color:#020219; letter-spacing:-0.03em;}
+header.title[class*="ico"] p > span {padding-bottom:10px; display:block;}
+header.title[class*="ico"]:before {content:""; position:absolute; left:50%; top:60px; width:130px; height:130px; margin-left:-65px; border-radius:50%; background-color:#f0f5fb;}
+header.title[class*="ico"]:after {content:""; position:absolute; left:50%; top:85px; width:80px; height:80px; margin-left:-40px; background-image:url("../img/common/icon_set1.png");}
+header.title.ico1:after {background-position:0 -1600px;}
+header.title.ico2:after {background-position:-80px -1600px;}
+header.title.ico3:after {background-position:-160px -1600px;}
+header.title.ico4:after {background-position:-240px -1600px;}
+header.title.ico5:after {background-position:-320px -1600px;}
+header.title.ico6:after {background-position:-400px -1600px;}
+header.title.ico7:after {background-position:-480px -1600px;}
+header.title.ico8:after {background-position:-560px -1600px;}
+
+.tit_sub {font-weight:700; font-size:19px;}
+.txt {font-size:14px; line-height:20px; color:#5b646e; letter-spacing:-0.05em;}
+.txt.t1 {font-size:16px;}
+
+/*--------------------------------------------------------------------------------
+	# 버튼
+---------------------------------------------------------------------------------*/
+.btn_join {position:relative; width:100%; height:68px; margin-top:17px; padding-left:20px; font-weight:700; font-size:16px; line-height:68px; color:#fff; text-align:left; letter-spacing:-0.05em; border-radius:3px; background-color:#24aae1; display:inline-block; box-sizing:border-box;}
+.btn_join:after {content:""; position:absolute; right:22px; top:50%; width:8px; height:8px; margin-top:-5px; border:solid #fff; border-width:0 2px 2px 0; transform:rotate(-45deg)}
+
+.btn_wrap1 [class*="btn_type"] {width:210px; padding:0 15px;}
+.btn_wrap1 [class*="btn_type"] + [class*="btn_type"] {margin-left:12px;}
+.btn_wrap1:not(.t1):last-child {padding-bottom:30px;}
+.btn_wrap1.t1 {margin-top:40px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_1000 : 회원가입 메인
+---------------------------------------------------------------------------------*/
+.box_join {width:920px; margin:45px auto 0 auto; padding:45px 279px 50px 279px; border-radius:3px; background-color:#fff; box-sizing:border-box;}
+.box_join .txt {margin-top:13px;}
+.btn_join + .tit_sub {margin-top:35px;}
+
+.sns_join {margin-top:17px;}
+.sns_join:after {clear:both; content:""; display:block;}
+.sns_join li {width:100%; text-align:center;}
+.sns_join li:nth-child(odd) {float:left;}
+.sns_join li:nth-child(even) {float:right;}
+.sns_join li:nth-child(n + 2) {margin-top:10px;}
+.sns_join li:only-child {width:100%;}
+.sns_join li a {padding:10px; font-weight:700; font-size:16px; border-radius:3px; border-color:#000; display:block;}
+.sns_join li a:before {content:""; width:26px; height:26px; margin-right:10px; border-radius:2px; background-image:url("../img/common/icon_set1.png"); vertical-align:middle; display:inline-block;}
+.sns_join li a.btn_loginPlus{position:relative; color:#fff; background-color:#ff464d; border-color:#ff464d} /* 로그인플러스 배너 추가 */
+.sns_join li a.btn_loginPlus:before{margin-right:0; background-position:-800px -240px}
+.sns_join li a.btn_loginPlus:after{content:'AD'; position:absolute; font-size:9px; font-weight:lighter; top:0; right:3px; }
+.sns_join .ico1 a:before {background-position:-720px -400px;}
+.sns_join .ico2 a:before {background-position:-760px -400px;}
+.sns_join .ico3 a:before {background-position:-800px -400px;}
+.sns_join .ico4 a:before {background-position:-834px -394px; padding:6px; margin:-9px 0 -6px -6px;}
+.sns_join .ico4 a {color:#000;}
+.box_sns > p {margin-top:16px; font-size:13px; color:#7c838b;}
+
+.bnr_area.log {width:920px; margin:16px auto 0 auto; padding-bottom:50px;}
+.bnr_area.log li {width:calc(50% - 8px);}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_1100 : 회원가입 폼
+---------------------------------------------------------------------------------*/
+.area_field {padding:50px 140px; border-radius:3px; background-color:#fff;}
+.area_field .txt_sub {font-weight:700; font-size:18px; letter-spacing:-0.05em; text-align:center; display:block;}
+.area_field .txt_sub span {position:relative; display:inline-block;}
+.area_field .txt_sub[class*="ico"] span:before {content:""; width:64px; height:64px; margin-right:8px; border-radius:50%; vertical-align:middle; display:inline-block;}
+.area_field .txt_sub[class*="ico"] span:after {content:""; position:absolute; left:12px; top:12px; width:40px; height:40px; background-image:url("../img/common/icon_set1.png");}
+.area_field .txt_sub.ico1 span:before {background-color:#393992;}
+.area_field .txt_sub.ico2 span:before {background-color:#25ca08;}
+.area_field .txt_sub.ico3 span:before {background-color:#fce108;}
+.area_field .txt_sub.ico4 span:before {background-color:#425f9d;}
+.area_field .txt_sub.ico5 span:before {background-color:#000000;}
+.area_field .txt_sub.ico1 span:after {background-position:-960px -360px;}
+.area_field .txt_sub.ico2 span:after {background-position:-720px -360px;}
+.area_field .txt_sub.ico3 span:after {background-position:-760px -360px;}
+.area_field .txt_sub.ico4 span:after {background-position:-800px -360px;}
+.area_field .txt_sub.ico5 span:after {background-position:-840px -360px;}
+.area_field [class*="tbl_type"] th, 
+.area_field [class*="tbl_type"] td {height:55px; padding:10px;}
+.area_field [class*="tbl_type"] [class*="inp_area"] {width:466px !important;}
+.area_field [class*="tbl_type"] .btn_type2 {min-width:74px;}
+
+header.title + .area_field {margin-top:45px;}
+.area_field .txt_sub + .tbl_type1 {margin-top:35px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_1101 : 회원가입 완료
+---------------------------------------------------------------------------------*/
+header.title[class*="ico"] + .btn_wrap1 {margin-top:34px;}
+.btn_wrap1 + .bnr_area.log {margin-top:50px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_1101 : 회원가입 완료
+---------------------------------------------------------------------------------*/
+.data_txt {margin-top:12px; font-weight:700; text-align:center;}
+.data_txt p {font-size:16px; line-height:1.25;}
+.data_txt p + p {margin-top:5px;}
+.data_txt + .btn_wrap1 {margin-top:57px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_1301 : 회원가입 완료
+---------------------------------------------------------------------------------*/
+.form_age fieldset {padding:11px 9px; border:1px solid #adb1b6; border-radius:3px;}
+.form_age label[class*="choice_type"] em {font-weight:700; font-size:16px; line-height:22px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_1400 : 간편회원가입 완료 미인증자
+---------------------------------------------------------------------------------*/
+.bnr_area.log2 {width:920px; margin:60px auto 0 auto;}
+.bnr_area.log2:last-child {margin:60px auto;}
+.bnr_area.log2 > * {float:none; width:auto;}
+.bnr_area.log2 + .bnr_area.log {margin-top:12px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_2000 : 회원 로그인
+---------------------------------------------------------------------------------*/
+.box_login {width:920px; margin:45px auto 0 auto;}
+.box_login .form_login {padding:50px 242px 46px 242px;}
+.form_login {background-color:#fff; box-sizing:border-box;}
+.form_join {position:relative; margin:0 auto; padding:0 121px 36px 0; box-sizing:border-box;}
+.form_join:after {clear:both; content:""; display:block;}
+.form_join [class*="inp_type"] {float:left; width:100%;}
+.form_join [class*="inp_type"] + [class*="inp_type"] {margin-top:10px;}
+.form_join .btn_login {position:absolute; right:0; top:0; width:113px; height:106px; min-width:auto; padding:0 10px; font-weight:700; font-size:17px; line-height:104px; border-radius:3px;}
+
+.form_join .util {position:absolute; left:0; bottom:0; width:100%;}
+.form_join .util:after {clear:both; content:""; display:block;}
+.form_join .util [class*="choice_type"] {float:left;}
+.form_join .util ul {float:right; overflow:hidden;}
+.form_join .util ul li {float:left; margin:0 -8px 0 15px;}
+.form_join .util ul li:after {content:""; width:1px; height:13px; margin:0 0 -3px 7px; background-color:#dee0e2; display:inline-block;}
+.form_join .util ul a {font-size:14px; color:#7c838b;}
+
+.form_login .sns_join {margin-top:39px;}
+.form_login .txt {margin-top:18px;}
+
+.non {margin:-3px auto 0;}
+.non > .btn_type5 {width:100%; margin-top:18px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_2001 : 캡챠
+---------------------------------------------------------------------------------*/
+.member .box_catpcha {clear:both; margin-right:-121px; padding-top:16px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_2002 : 비밀번호 변경 안내
+---------------------------------------------------------------------------------*/
+.box_pwd {width:436px; margin:0 auto;}
+.box_pwd > [class*="inp_type"] {width:100%; display:block;}
+.box_pwd > [class*="inp_type"] + [class*="inp_type"] {margin-top:10px;}
+.box_pwd > [class*="inp_type"] input {letter-spacing:-0.05em;}
+.title + .box_pwd {margin-top:34px;}
+.box_pwd + .btn_wrap1, 
+.box_validity + .btn_wrap1 {margin-top:40px; padding-bottom:30px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_2003 : 휴면계정 활성화 안내
+---------------------------------------------------------------------------------*/
+.box_validity {width:821px; margin:86px auto 0 auto; padding:26px 29px; border:1px solid #dee0e2;}
+.box_validity > p {margin-top:16px; font-size:13px; line-height:1.47; color:#5b646e; letter-spacing:-0.05em;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_2011 : 휴면계정 활성화 안내
+---------------------------------------------------------------------------------*/
+.box_check {margin:50px 0; line-height:20px; text-align:center;}
+.box_check label[class*="choice_type"] em {font-weight:700;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_2200 : 아이디 찾기
+---------------------------------------------------------------------------------*/
+.box_login .form_login.t1 {padding:46px 10px 70px 10px; text-align:center;}
+.form_login.t1 .txt {margin-top:7px;}
+.form_login.t1 .tbl_type3, 
+.form_login.t1 .btn_join {width:362px;}
+.form_login.t1 .tbl_type3 {margin:32px auto 0 auto;}
+.form_login.t1 .tbl_type3 + .btn_join {margin-top:15px;}
+
+/*--------------------------------------------------------------------------------
+	# PC_LOG_2203 : 휴면계정 활성화 안내
+---------------------------------------------------------------------------------*/
+.btn_wrap1 + .tit_type.t1 {margin-top:65px;}
+.tit_type.t1 + .box_pwd {margin-top:26px;}
+
+
+/*--------------------------------------------------------------------------------
+	# 팝업창
+---------------------------------------------------------------------------------*/
+/*.pop_body {overflow-y:scroll;}*/
+.pop_body .container {width:100%; padding:15px 25px !important; box-sizing:border-box;}
+.pop_body .tit_type3 {margin-top:0;}
+.pop_body .form_login .txt {font-size:13px; letter-spacing:-0.12em;}
+.pop_body .form_login .txt + .btn_wrap1 {margin-top:27px;}
+.pop_body .form_login .txt + .btn_wrap1 a {width:100%;}
+
+.pop_body .bnr_area.log {width:452px; margin-top:10px; padding-bottom:0;}
+.pop_body .bnr_area.log li {width:100%;}
+
+
+
+
+

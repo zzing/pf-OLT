@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* ##############################
+	# 온라인투어 리뉴얼 2019
+	# 해외항공,국내항공,제주할인항공,공동구매항공
+############################## */
+
+/*--------------------------------------------------------------------------------
+	# 상단영역
+---------------------------------------------------------------------------------*/
+/* 상단 BG */
+.headarea[class*="img"] {padding:34px 0 31px;}
+.headarea[class*="img"].t1 {padding-bottom:82px;}
+.headarea.img1 {background-image:url("../img/flight/bg_flg_1920x300.jpg");} /* 공동구매항공 */
+.headarea.img2 {background-image:url("../img/flight/bg_flj_1920x321.jpg");} /* 제주할인항공 */
+.headarea.img3 {padding:0;background-image:url("../img/flight/bg_flg_1920x140.jpg");} /* 해외항공 : 서브메인 */
+
+/* 국내항공 */
+.headarea.img4 {padding:0;background:#4bbece url("../img/flight/bg_fld_1920x140.jpg") no-repeat 50% 100%;}
+.headarea.img4 label.choice_type3 input:checked + em,
+.headarea.img4 .inp_type3[class*="util"]:after,
+.headarea.img4 .btn_blue {background-color:#166aa5;border-color:#166aa5;}
+
+/* 미디어쿼리 : 해상도 넓음 */
+@media only screen and (min-width:1920px) {
+	.headarea.img4 {background-size:cover;}
+}
+.container .txt_wrap {padding-top:10px;}
+.container .txt_wrap .tit_type.t1 {font-weight:400; font-size:14px; color:#2096ce; margin-bottom:20px; position:absolute; top:-18px; left:50%; margin-left:-119px;}
+
+/*--------------------------------------------------------------------------------
+	# 해외항공 | 프리미엄
+---------------------------------------------------------------------------------*/
+[class*="panel"].premium {margin:-8px 0 27px;}
+[class*="panel"].business {padding:27px 0;}
+[class*="panel"].premium .inner, [class*="panel"].business .inner {position:relative;padding-left:266px;box-sizing:border-box;}
+[class*="panel"].premium header, [class*="panel"].business header {overflow:hidden;position:absolute;top:8px;bottom:8px;left:0;padding-left:250px;width:0;border-radius:3px;background:url('../img/flight/bg_flg_500X530.png') no-repeat 0 100%;white-space:nowrap;}
+[class*="panel"].business header {background-position:100% 100%}
+[class*="panel"].business .bnr_type6 li {border:0 !important;}
+
+/*--------------------------------------------------------------------------------
+	# 국내항공 | 예약/결제하기 | 안내사항
+---------------------------------------------------------------------------------*/
+[class*="txt_type"][data-update="up20200617"] li:nth-child(3) {margin-top:15px;}
+[class*="txt_type"][data-update="up20200617"] li:nth-child(n+3):before {content:none;}
+
+/*--------------------------------------------------------------------------------
+	# 제주할인항공
+	# 제주할인항공에서는 padding-top이 있어야함. layout.css에 0인걸 다시 재정의함.
+---------------------------------------------------------------------------------*/
+.content > .form_search1 + .container {padding-top:35px;}
+
+/*--------------------------------------------------------------------------------
+	# 공동구매항공
+---------------------------------------------------------------------------------*/
+.content:not([class*="sticky"]) .headarea[style]:after {content:'';display:block;position:absolute;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.4)}

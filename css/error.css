@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* ##############################
+	# 온라인투어 리뉴얼 2019
+	# ERROR
+############################## */
+
+/*--------------------------------------------------------------------------------
+	# 공통
+---------------------------------------------------------------------------------*/
+.container {position:fixed;top:50%;left:50%;max-height:100%;overflow:auto;transform:translate(-50%,-50%);}
+/* time */
+time + time:before {content:' ~ ';}
+/* 텍스트 :포인트색상 */
+.txt_c2 {color:#ff464d !important;}
+/* 타이틀/안내문구 */
+header {text-align:center;}
+header > h1 {font-size:29px;}
+header > p {margin-top:15px;font-size:18px;line-height:1.7;}
+header:before {content:'';display:block;width:80px;height:88px;margin:0 auto 12px;background:url("../img/error/icon_set1.png") no-repeat;}
+/* 버튼 */
+.btn_wrap {width:100%;margin-top:34px;text-align:center;}
+.btn_type {display:inline-block;min-width:170px;padding:0 38px;border:1px solid #24aae1;border-radius:3px;background-color:#fff;font-size:15px;line-height:46px;color:#020219;font-weight:700;text-align:center;letter-spacing:-0.04em;vertical-align:middle;box-sizing:border-box;transition:border-color 0.3s ease, background-color 0.3s ease;-webkit-transition:border-color 0.3s ease, background-color 0.3s ease;}
+.btn_type:hover {border-color:#0073a2;}
+/* 테이블 */
+.tbl_type1 {position:relative;table-layout:fixed;width:100%;}
+.tbl_type1:not(:first-child) {margin-top:24px;}
+.tbl_type1 > tbody > tr > th, .tbl_type1 > tbody > tr > td {height:48px;padding:11px 10px 11px;border-top:1px solid #dee0e2;font-size:14px;line-height:1.4;text-align:center;letter-spacing:-0.07em;box-sizing:border-box;}
+.tbl_type1:before, .tbl_type1:after {content:"";display:block;position:absolute;top:0;left:0;right:0;height:1px;z-index:2;background:#5b646e;}
+.tbl_type1:after {top:auto;bottom:0;background:#adb1b6;}
+.tbl_type1 > tbody > tr > th:not([scope="rowgroup"]) {background:#eff2f6;}
+.tbl_type1 > tbody > tr > td {text-align:left;}
+/* 안내형 : 고객센터 */
+.data_info {overflow:auto;position:relative;padding:45px 0 25px;border-radius:10px;background:#f0f5fb;font-size:14px;font-weight:700;letter-spacing:-1px;box-sizing:border-box;}
+.data_info:not(:first-child) {margin-top:34px;}
+.data_info:before {content:'';position:absolute;left:50%;top:29px;bottom:29px;display:block;width:1px;height:calc(100% - 58px);background:#d0d7e0;}
+.data_info dt, .data_info dd {float:left;width:50%;padding:0 35px;box-sizing:border-box;}
+.data_info dt {position:absolute;left:0;top:25px;color:#7c838b;}
+.data_info dt + dd {margin-top:3px;}
+.data_info dd + dt {left:50%;}
+.data_info dt:first-child + dd {font-family:'Spoqa Han Sans';font-size:28px;color:#2096ce;font-weight:400;letter-spacing:0;}
+/* 안내형2 : 고객센터 + 부서별 */
+.data_info2 {position:relative;font-size:14px;color:#5b646e;}
+.data_info2 dt, .data_info2 dd {position:relative;padding-left:8px;}
+.data_info2 dt {font-weight:700;}
+.data_info2 .area1 > dd {display:inline-block;color:#2096ce;font-weight:700;}
+.data_info2 .area1 > dt + dd {display:block;margin-top:-3px;font-family:'Spoqa Han Sans';font-size:28px;color:#2096ce;font-weight:400;}
+.data_info2 .area2 {margin-top:17px;padding-top:14px;border-top:1px solid #dee0e2;}
+.data_info2 .area2 > dt {position:absolute;clip:rect(0 0 0 0);padding:0;width:1px;height:1px;margin:-1px;overflow:hidden;}
+.data_info2 .area2 > dd {display:inline-block;width:calc(50% - 4px);line-height:1.8;box-sizing:border-box;}
+.data_info2 .area2 > dd > strong {margin-right:7px;}
+.data_info2 .area1 > dt:before, .data_info2 .area2 > dd:before {content:'';display:block;position:absolute;top:11px;left:0;width:3px;height:3px;border-radius:50%;background:#5b646e;}
+.data_info2 .area1 > dt:before {top:8px;}
+/* 텍스트 */
+.txt_type {font-size:14px;}
+.txt_type:not(:first-child) {margin-top:16px;}
+
+/*--------------------------------------------------------------------------------
+	# 접속불가
+---------------------------------------------------------------------------------*/
+.error1 header:before {background-position:0 0;}
+.error1 > .data_info {width:450px;}
+
+/*--------------------------------------------------------------------------------
+	# 404 에러
+---------------------------------------------------------------------------------*/
+.error2 header:before {width:157px;background-position:-90px 0;}
+
+/*--------------------------------------------------------------------------------
+	# 500 에러
+---------------------------------------------------------------------------------*/
+.error3 header:before {width:143px;background-position:-270px 0;}
+
+/*--------------------------------------------------------------------------------
+	# 시스템 점검 중
+---------------------------------------------------------------------------------*/
+.error4 header:before {background-position:-450px 0;}
+.error4 > .tbl_type1 {width:778px;}
+
+/*--------------------------------------------------------------------------------
+	# 서비스 일시 중단
+---------------------------------------------------------------------------------*/
+.error5 header:before {background-position:-540px 0;}
+.error5 > .tbl_type1 {width:778px;}
