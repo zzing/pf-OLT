@@ -1,1 +1,1 @@
-$ git branch -d <OLT>
+#ㅇㅇㅇㅇ
